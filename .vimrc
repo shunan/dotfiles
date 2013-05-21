@@ -90,14 +90,12 @@ syntax on
 set cursorline
 
 "close gui
-"set go=
+set go=
 
 if g:iswindows==1
     "colorscheme darkblue
     colorscheme blackboard
-    "set guifont=Courier_New:h12:w6
-    set guifont=Consolas:h12:w6
-    set guifontwide=ºÚÌå:h12
+    set guifont=Courier_New:h12:w6
     "set guifontwide=NSimSun-18030,NSimSun
     set termencoding=GBK
 else
@@ -113,7 +111,7 @@ else
     "set background=dark
     "colorscheme solarized
     set guifont=DejaVu\ Sans\ Mono\ 12
-    set guifontwide=ÎÄÈªæäµÈ¿íÎ¢Ã×ºÚ\ 12
+    set guifontwide=æ–‡æ³‰é©¿ç­‰å®½å¾®ç±³é»‘\ 12
     set termencoding=utf-8
 endif
 
@@ -179,6 +177,9 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
+nmap <F5> "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
+imap <F5> <C-R>=strftime("%c")<CR>
 
 """"""""""""""""
 "  Status line " 
