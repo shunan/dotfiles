@@ -51,6 +51,10 @@
 
  "日历
  Bundle 'mattn/calendar-vim'
+
+ "缩进对齐
+ Bundle 'nathanaelkane/vim-indent-guides'
+
  "Bundle 'Valloric/YouCompleteMe'
  "Bundle 'Shougo/neocomplcache'
  "Bundle 'garbas/vim-snipmate'
@@ -140,8 +144,8 @@ if g:iswindows==1
                 \ 'ext': '.md'}]
 else
 	let g:vimwiki_list = [{'path': '/media/Src/Wiki/',
-                \ 'syntax': 'markdown',
-                \ 'ext': '.md'}, 
+                \ 'ext': '.md', 
+                \ 'syntax': 'markdown'},
                 \ {'path': '/media/Src/NewWiki',
                 \ 'ext': '.md'}]
 endif
@@ -191,3 +195,8 @@ endif
 """"""""""""
 let g:SuperTabRetainCompletiontype = 2
 let g:supertabdefaultcompletionType = "<C-X><C-U>"
+
+"""""""""""""""""""""
+" vim-indent-guides "
+"""""""""""""""""""""
+let g:indent_guides_guide_size=1

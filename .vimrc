@@ -197,6 +197,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ POS:\ %
 autocmd FileType c,cpp  map <buffer> <leader><space> :w<cr>:make<cr>
 nmap <leader>cn :cn<cr>
 nmap <leader>cp :cp<cr>
+nmap <leader>cc :ccl<cr>
 nmap <leader>cw :cw 10<cr>
 
 "Load project settings
